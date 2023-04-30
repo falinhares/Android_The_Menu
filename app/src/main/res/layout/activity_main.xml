@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvRest"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Menu"/>
+
+        <TextView
+            android:padding="12dp"
+            android:id="@+id/tvEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvRest"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="falinhares@gmail.com"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvEntradas"
+            android:layout_marginTop="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvRest"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/img_entrada"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvEntradas"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entradas"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPrincipal"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cvEntradas"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/img_principal"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvPrincipal"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pratos Principais"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
